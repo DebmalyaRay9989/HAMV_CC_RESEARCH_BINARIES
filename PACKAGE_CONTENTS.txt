@@ -1,0 +1,24 @@
+HAMV-CC Research Execution Package — FINAL RECHECKED / PROTOCOL ALIGNED
+
+Package root: HAMV_CC_Research_Execution_Package
+
+Key corrections in this release:
+- Python 3.9+ compatible dependency/documentation baseline.
+- src/hamvcc/data.py uses Optional[np.ndarray] instead of Python 3.10-only X | None syntax.
+- Demo fixture follows the manuscript protocol specification: 180 samples, three latent groups, 12/16/10 dimensional views, 65/540 masked view entries (12.04%), fixed k=3, 30 epochs, and ten matched seeds.
+- run_experiments.py accepts seed ranges such as 0-9.
+- Trained model checkpoints are saved and required by the frozen external evaluator.
+- Manuscript reference values are documented separately and are never hard-coded as execution output.
+
+Validation performed before packaging:
+- pytest: 9 passed
+- protocol demo: 10/10 seeds completed successfully
+- aggregation: 10 successful runs
+- Python bytecode compilation of package source/tests: passed
+- external benchmark CLI: passed
+- ZIP integrity: verified
+
+Scientific reproducibility boundary:
+The manuscript's exact reported numerical values require the original byte-identical synthetic fixture/training state. This package reconstructs the documented fixture specification and computes observed results honestly; it does not fabricate the manuscript values.
+
+The package does not fabricate or include the real 638-document archive. Real external data must be supplied separately according to docs/REAL_ARCHIVE_SETUP.md.

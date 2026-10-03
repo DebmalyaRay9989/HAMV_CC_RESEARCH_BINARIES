@@ -1,0 +1,28 @@
+{
+  "data_npz": "data_demo/synthetic_multiview.npz",
+  "output_dir": "runs/demo",
+  "n_clusters": 3,
+  "epochs": 30,
+  "batch_size": 64,
+  "latent_dim": 32,
+  "hidden_dim": 64,
+  "temperature": 0.2,
+  "lr": 0.001,
+  "weight_decay": 0.0001,
+  "loss_weights": {
+    "instance": 1.0,
+    "cross_view": 0.5,
+    "cluster": 0.5,
+    "balance": 0.1
+  },
+  "ablation": "full",
+  "missing_view_condition": "full",
+  "device": "cpu",
+  "kmeans_n_init": 20,
+  "k_search": [
+    2,
+    3,
+    4
+  ],
+  "run_id_prefix": "demo"
+}

@@ -1,0 +1,15 @@
+{
+  "release": "HAMV-CC Research Binaries",
+  "dataset": "DATA/archive_a_features.npz",
+  "source_feature_table": "docs/document_features.csv",
+  "records_source": 683,
+  "source_ids": 659,
+  "dimensions": {
+    "structural": 16,
+    "visual": 81,
+    "text": 128
+  },
+  "masks": "availability OR aggregated by source id",
+  "labels": "not included because private archive has no independent semantic labels",
+  "text_features_zero_valued": true
+}

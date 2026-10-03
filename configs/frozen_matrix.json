@@ -1,0 +1,8 @@
+{
+  "seed_list": [42,43,44,45,46,47,48,49,50,51],
+  "ablations": ["full","no_reliability","no_missing_mask","no_cross_view","no_cluster_consistency","fixed_k"],
+  "missing_view_conditions": ["full","no_text","no_visual","no_structural","only_text","only_visual","only_structural"],
+  "primary_real_archive_n": 638,
+  "human_audit_n": 100,
+  "note": "Run the pilot first. The full matrix is 6 x 7 x 10 = 420 runs; do not treat the synthetic demo as evidence for the real archive."
+}

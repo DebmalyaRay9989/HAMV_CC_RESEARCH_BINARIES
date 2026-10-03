@@ -1,0 +1,2 @@
+manifest_index,sample_id,path,source_group,extension,size_bytes,sha256
+0,synthetic_multiview.npz,synthetic_multiview.npz,root,npz,19842,006e6f116cbc05df10bfb35ed85b10b0b83f4e7cdd61e95c8a1d769b99bc4647

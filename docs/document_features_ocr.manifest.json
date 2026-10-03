@@ -1,0 +1,15 @@
+{
+  "input": "C:\\Users\\Debmalya Ray\\OneDrive\\Desktop\\NEW_MODEL\\NEW\\HAMV_CC_DATA\\dataset\\dataset",
+  "documents": 683,
+  "output": "C:\\Users\\Debmalya Ray\\OneDrive\\Desktop\\NEW_MODEL\\NEW\\TKDE_HAMV_CC_Final_Scientific_Revision_Scripts_v3_improved\\results\\document_features_ocr.csv",
+  "formats": [
+    ".jpg",
+    ".tif"
+  ],
+  "ocr_enabled": true,
+  "max_pages_per_document": 8,
+  "text_feature_dim": 128,
+  "visual_feature_dim": 82,
+  "structural_feature_dim": 16,
+  "scientific_note": "Features are deterministic ingestion features; they are not a substitute for the manuscript's actual HAMV-CC implementation."
+}
